@@ -113,7 +113,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/[0.05] py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-[12px] text-white/20">
-            &copy; {new Date().getFullYear()} PPAY Technologies Ltd. All rights reserved.
+            &copy; {new Date().getFullYear()} PROSPER DIGITAL SYSTEMS LTD. All rights reserved.
           </p>
           <p className="text-[12px] text-white/15">
             Designed for the future of African finance.

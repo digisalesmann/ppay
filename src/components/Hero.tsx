@@ -123,7 +123,7 @@ export default function Hero() {
             <PhoneMockup
               src="/screenshots/hero.jpg"
               alt="PPAY dashboard"
-              width={260}
+              width={290}
               screenBg="#1a3f7a"
             />
           </motion.div>

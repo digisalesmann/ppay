@@ -62,7 +62,7 @@ const sections = [
   {
     title: "Intellectual property",
     content: [
-      "All content, trademarks, logos, and software on the PPAY platform are owned by PPAY Technologies Ltd or our licensors.",
+      "All content, trademarks, logos, and software on the PPAY platform are owned by PROSPER DIGITAL SYSTEMS LTD or our licensors.",
       "You are granted a limited, non-exclusive, non-transferable licence to use the PPAY app for personal, non-commercial purposes.",
       "You may not copy, modify, distribute, or create derivative works from any part of the PPAY platform without written permission.",
     ],
@@ -109,7 +109,7 @@ export default function TermsPage() {
 
         <p className="text-[16px] leading-[1.8] text-white/50 mb-16">
           These Terms of Service ("Terms") constitute a legally binding agreement
-          between you and PPAY Technologies Ltd governing your access to and use
+          between you and PROSPER DIGITAL SYSTEMS LTD governing your access to and use
           of the PPAY application and related services.
         </p>
 

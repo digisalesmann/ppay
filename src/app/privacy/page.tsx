@@ -94,7 +94,7 @@ export default function PrivacyPage() {
         </p>
 
         <p className="text-[16px] leading-[1.8] text-white/50 mb-16">
-          PPAY Technologies Ltd ("PPAY", "we", "us", "our") is committed to protecting
+          PROSPER DIGITAL SYSTEMS LTD ("PPAY", "we", "us", "our") is committed to protecting
           your privacy. This policy explains what personal information we collect,
           how we use it, and your rights under the Nigeria Data Protection Regulation
           (NDPR) and applicable law.
@@ -126,7 +126,7 @@ export default function PrivacyPage() {
             <a href="mailto:privacy@ppay.app" className="text-blue-400 hover:text-blue-300 transition-colors">
               privacy@ppay.app
             </a>
-            {" "}or write to PPAY Technologies Ltd, Lagos, Nigeria.
+            {" "}or write to PROSPER DIGITAL SYSTEMS LTD, Lagos, Nigeria.
           </p>
         </div>
       </div>

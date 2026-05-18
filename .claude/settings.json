@@ -4,7 +4,26 @@
       "Bash(ls /home/buildwithvictor/Projects/ppay-website && echo \"---\" && ls /home/buildwithvictor/Projects/ppay_mobile)",
       "Read(//home/buildwithvictor/Projects/ppay_mobile/**)",
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack)",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(node -e \"const l = require\\('/home/buildwithvictor/Projects/ppay-website/node_modules/lucide-react'\\); console.log\\(Object.keys\\(l\\).filter\\(k => /linkedin|instagram|github|mail/i.test\\(k\\)\\)\\)\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001)",
+      "Bash(PORT=3001 npx next dev --port 3001)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(mkdir -p /home/buildwithvictor/Projects/ppay-website/public/brands)",
+      "Bash(cp /home/buildwithvictor/Projects/ppay_mobile/assets/logos/apple.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/amazon.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/netflix.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/google.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/spotify.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/microsoft.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/discord.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/paypal.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/cashapp.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/uber.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/twitter.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/tiktok.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/snapchat.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/airbnb.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/steam.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/xbox.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/venmo.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/zelle.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/wise.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/revolut.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/mtn.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/airtel.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/glo.png /home/buildwithvictor/Projects/ppay_mobile/assets/logos/9mobile.png /home/buildwithvictor/Projects/ppay-website/public/brands/)",
+      "Bash(node -e \"const p = require\\('@phosphor-icons/react'\\); const icons = ['CurrencyCircleDollar','Keypad','WifiSlash','DeviceMobileSpeaker','Nfc','Headset','ArrowUpRight','Gift','PiggyBank','CreditCard']; icons.forEach\\(i => console.log\\(i, !!p[i]\\)\\)\")",
+      "Bash(node -e \"const p = require\\('@phosphor-icons/react'\\); const keys = Object.keys\\(p\\).filter\\(k => /wifi|keypad|currency|mobile|nfc|headset|headphone/i.test\\(k\\)\\); console.log\\(keys.join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const p = require\\('@phosphor-icons/react/dist/cjs/index.js'\\); const keys = Object.keys\\(p\\).filter\\(k => /wifi|Wifi|Keypad|Currency|Mobile|Nfc|Headset|Headphone/i.test\\(k\\)\\); console.log\\(keys.join\\('\\\\n'\\)\\)\")",
+      "Bash(find /home/buildwithvictor/Projects/crypto-bot -type f | head -40 && echo \"---\" && cat /home/buildwithvictor/Projects/crypto-bot/README.md 2>/dev/null || echo \"no README\")",
+      "Read(//home/buildwithvictor/Projects/crypto-bot/**)",
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website remote -v)",
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website status)",
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website remote add origin https://github.com/digisalesmann/ppay.git)",
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website add next.config.ts package.json package-lock.json src/app/globals.css src/app/layout.tsx src/app/page.tsx src/app/favicon.ico src/app/icon.png src/app/about/ src/app/contact/ src/app/privacy/ src/app/terms/ src/components/ src/lib/ public/ppay.PNG public/brands/ public/screenshots/)",
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website status --short)",
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website commit -m ' *)",
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website push -u origin main)"
     ]
   }
 }
