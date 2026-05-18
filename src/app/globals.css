@@ -1,26 +1,181 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ─── Design tokens ───────────────────────────────────────── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-geist);
+
+  /* Extra-small breakpoint */
+  --breakpoint-xs: 400px;
+
+  /* Surfaces */
+  --color-base:    #02040f;
+  --color-surface: #070d1c;
+  --color-raised:  #0c1526;
+  --color-white:   #ffffff;
+  --color-off:     #f8faff;
+
+  /* Blue scale */
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-900: #1e3a8a;
+
+  /* Text */
+  --color-text-primary:   #f1f5f9;
+  --color-text-secondary: rgba(241,245,249,0.5);
+  --color-text-muted:     rgba(241,245,249,0.3);
+  --color-text-dark:      #0f172a;
+  --color-text-gray:      #64748b;
+  --color-text-gray-light:#94a3b8;
+
+  /* Border */
+  --color-border-dark:  rgba(255,255,255,0.07);
+  --color-border-light: rgba(15,23,42,0.09);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Reset & base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #02040f;
+  color: #f1f5f9;
+  font-family: var(--font-geist), 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
 }
+
+::selection {
+  background: rgba(37,99,235,0.22);
+  color: #bfdbfe;
+}
+
+/* ─── Scrollbar ────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #02040f; }
+::-webkit-scrollbar-thumb { background: #2563eb; border-radius: 2px; }
+
+/* ─── Noise texture overlay (applied via class) ─────────────── */
+.noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  mix-blend-mode: overlay;
+  opacity: 0.6;
+}
+
+/* ─── Gradient text ────────────────────────────────────────── */
+.text-gradient {
+  background: linear-gradient(130deg, #ffffff 30%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.text-gradient-blue {
+  background: linear-gradient(130deg, #2563eb, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Glass ────────────────────────────────────────────────── */
+.glass {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.07);
+}
+.glass-light {
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(15,23,42,0.08);
+}
+
+/* ─── Glow ─────────────────────────────────────────────────── */
+.glow {
+  box-shadow:
+    0 0 0 1px rgba(37,99,235,0.25),
+    0 0 40px rgba(37,99,235,0.25),
+    0 0 80px rgba(37,99,235,0.08);
+}
+.glow-sm {
+  box-shadow: 0 0 24px rgba(37,99,235,0.3);
+}
+
+/* ─── Grid background ──────────────────────────────────────── */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+/* ─── Dot grid ─────────────────────────────────────────────── */
+.dot-bg {
+  background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ─── Section ──────────────────────────────────────────────── */
+.section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+@media (min-width: 768px) {
+  .section { padding-top: 9rem; padding-bottom: 9rem; }
+}
+@media (min-width: 1024px) {
+  .section { padding-top: 11rem; padding-bottom: 11rem; }
+}
+
+/* ─── Marquee ──────────────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-inner {
+  display: flex;
+  width: max-content;
+  animation: marquee 36s linear infinite;
+}
+.marquee-inner:hover { animation-play-state: paused; }
+.marquee-reverse .marquee-inner { animation-direction: reverse; }
+
+/* ─── Float ────────────────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+.float { animation: float 5s ease-in-out infinite; }
+
+/* ─── Pulse ring ───────────────────────────────────────────── */
+@keyframes ring {
+  0%   { transform: scale(1);   opacity: 0.6; }
+  100% { transform: scale(2.8); opacity: 0; }
+}
+
+/* ─── Divider ──────────────────────────────────────────────── */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+}
+.divider-light {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(15,23,42,0.1), transparent);
+}
+
+/* ─── Thin scrollbar in tables ─────────────────────────────── */
+.thin-scroll::-webkit-scrollbar { height: 3px; }
+.thin-scroll::-webkit-scrollbar-track { background: transparent; }
+.thin-scroll::-webkit-scrollbar-thumb { background: rgba(37,99,235,0.4); border-radius: 2px; }
