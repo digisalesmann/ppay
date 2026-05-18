@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /home/buildwithvictor/Projects/ppay-website && echo \"---\" && ls /home/buildwithvictor/Projects/ppay_mobile)",
+      "Read(//home/buildwithvictor/Projects/ppay_mobile/**)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack)",
+      "Bash(npm install *)"
+    ]
+  }
+}
