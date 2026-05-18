@@ -120,8 +120,8 @@ export default function Navbar() {
             {/* Spacer for header height */}
             <div className="h-16 flex-shrink-0" />
 
-            {/* Nav links */}
-            <div className="flex-1 flex flex-col justify-center px-8">
+            {/* Nav links — scrollable */}
+            <div className="flex-1 overflow-y-auto px-6 py-2">
               {links.map((l, i) => (
                 <motion.a
                   key={l.label}
@@ -130,34 +130,34 @@ export default function Navbar() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.35, delay: 0.05 + i * 0.05, ease: [0.22, 1, 0.36, 1] }}
-                  className="group flex items-center justify-between py-5 border-b border-white/[0.06] last:border-0"
+                  className="group flex items-center justify-between py-4 border-b border-white/[0.06] last:border-0"
                 >
-                  <span className="text-[1.6rem] font-bold text-white/80 group-hover:text-white transition-colors tracking-tight">
+                  <span className="text-[1.35rem] font-bold text-white/80 group-hover:text-white transition-colors tracking-tight">
                     {l.label}
                   </span>
-                  <ArrowRight size={18} weight="bold" className="text-white/20 group-hover:text-white/60 group-hover:translate-x-1 transition-all" />
+                  <ArrowRight size={16} weight="bold" className="text-white/20 group-hover:text-white/60 group-hover:translate-x-1 transition-all flex-shrink-0" />
                 </motion.a>
               ))}
             </div>
 
-            {/* Bottom CTA */}
+            {/* Bottom CTA — always visible */}
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.5 }}
-              className="px-8 pb-12 flex flex-col gap-3"
+              className="flex-shrink-0 px-6 pt-4 pb-10 flex flex-col gap-3 border-t border-white/[0.06]"
             >
               <a
                 href="#download"
                 onClick={() => setOpen(false)}
-                className="flex items-center justify-center h-14 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-[16px] transition-colors glow-sm"
+                className="flex items-center justify-center h-13 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-[15px] transition-colors glow-sm"
               >
                 Download free
               </a>
               <a
                 href="#download"
                 onClick={() => setOpen(false)}
-                className="flex items-center justify-center h-12 rounded-2xl bg-white/[0.05] hover:bg-white/[0.09] text-white/60 font-semibold text-[15px] transition-colors"
+                className="flex items-center justify-center h-11 rounded-2xl bg-white/[0.05] hover:bg-white/[0.09] text-white/60 font-semibold text-[14px] transition-colors"
               >
                 Log in
               </a>
