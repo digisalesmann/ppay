@@ -18,8 +18,10 @@ const nav: Record<string, { label: string; href: string }[]> = {
     { label: "Contact", href: "/contact" },
   ],
   Legal: [
-    { label: "Privacy Policy",   href: "/privacy" },
-    { label: "Terms of Service", href: "/terms"   },
+    { label: "Privacy Policy",   href: "/privacy"  },
+    { label: "Terms of Service", href: "/terms"    },
+    { label: "Cookie Policy",    href: "/cookies"  },
+    { label: "AML & KYC Policy", href: "/aml-kyc" },
   ],
 };
 

@@ -9,7 +9,7 @@ const sections = [
   {
     title: "Acceptance of terms",
     content: [
-      "By downloading, registering, or using the PPAY application or website, you agree to be bound by these Terms of Service and our Privacy Policy.",
+      "By downloading, registering, or using the PPAY application or website, you agree to be bound by these Terms of Service, our Privacy Policy, Cookie Policy, and AML & KYC Policy.",
       "If you do not agree to these terms, do not use PPAY.",
       "We may update these terms at any time. Continued use after changes are notified constitutes acceptance. We will give at least 14 days' notice of material changes.",
     ],
@@ -26,7 +26,7 @@ const sections = [
   {
     title: "Services",
     content: [
-      "PPAY provides a platform for purchasing gift cards, buying airtime and data, viewing live exchange rates, obtaining virtual phone numbers, sending and receiving money, issuing virtual and physical cards, offline payments (NearPay), and savings.",
+      "PPAY provides a platform for purchasing gift cards, buying airtime and data, viewing live exchange rates, obtaining virtual phone numbers, sending and receiving money, issuing virtual and physical cards, offline payments (NearPay), savings, and financial services via WhatsApp Bot.",
       "We reserve the right to add, modify, or discontinue any feature or service at any time with reasonable notice.",
       "Certain features may require identity verification (KYC) before use, in compliance with CBN regulations.",
     ],
@@ -37,13 +37,13 @@ const sections = [
       "Peer-to-peer transfers between PPAY users are free. Fees may apply to bank transfers, card funding, and certain third-party services.",
       "All applicable fees are displayed before you confirm a transaction. We will never charge a fee that was not disclosed prior to confirmation.",
       "Exchange rates are fetched in real time. PPAY may add a small spread to market rates for currency conversion services.",
-      "All transactions are final once confirmed. Refunds are handled on a case-by-case basis in line with our Refund Policy.",
+      "All transactions are final once confirmed. Refunds are handled on a case-by-case basis. Contact support at ppay.ng1@gmail.com for assistance.",
     ],
   },
   {
     title: "Prohibited conduct",
     content: [
-      "Using PPAY for money laundering, fraud, terrorism financing, or any other illegal activity.",
+      "Using PPAY for money laundering, fraud, terrorism financing, or any other illegal activity. See our AML & KYC Policy for full details on prohibited conduct and enforcement.",
       "Attempting to access another user's account without authorisation.",
       "Reverse engineering, decompiling, or otherwise attempting to extract the source code of the PPAY app.",
       "Sending unsolicited commercial communications through PPAY's messaging features.",
@@ -55,7 +55,7 @@ const sections = [
     title: "Account security",
     content: [
       "You are responsible for maintaining the confidentiality of your login credentials and transaction PIN.",
-      "You must notify us immediately at security@ppay.app if you suspect unauthorised access to your account.",
+      "You must notify us immediately at ppay.ng1@gmail.com if you suspect unauthorised access to your account.",
       "PPAY will never ask for your password or PIN via phone, email, or chat. Any such request is fraudulent.",
     ],
   },
@@ -135,8 +135,8 @@ export default function TermsPage() {
           <h2 className="text-[18px] font-bold text-white mb-3">Questions?</h2>
           <p className="text-[15px] leading-[1.75] text-white/40">
             If you have questions about these Terms, contact us at{" "}
-            <a href="mailto:legal@ppay.app" className="text-blue-400 hover:text-blue-300 transition-colors">
-              legal@ppay.app
+            <a href="mailto:ppay.ng1@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+              ppay.ng1@gmail.com
             </a>
             {" "}or through the in-app support chat.
           </p>

@@ -25,6 +25,8 @@ const sections = [
       "To detect, investigate, and prevent fraud, abuse, and security incidents.",
       "To send transaction confirmations, security alerts, and with your consent, promotional communications.",
       "To improve our products through anonymised analytics and usage patterns.",
+      "To operate cookies and similar tracking technologies as described in our Cookie Policy.",
+      "To meet AML, KYC, and counter-terrorism financing obligations as detailed in our AML & KYC Policy.",
     ],
   },
   {
@@ -54,7 +56,7 @@ const sections = [
       "Deletion: request erasure of your data where we are not legally required to retain it.",
       "Objection: opt out of marketing communications at any time via app settings or the unsubscribe link in emails.",
       "Portability: receive your data in a machine-readable format.",
-      "To exercise any right, email privacy@ppay.app. We respond within 30 days.",
+      "To exercise any right, email ppay.ng1@gmail.com. We respond within 30 days.",
     ],
   },
   {
@@ -68,7 +70,16 @@ const sections = [
   {
     title: "Children's privacy",
     content: [
-      "PPAY is intended for users aged 18 and above. We do not knowingly collect personal data from anyone under 18. If you believe a minor has created an account, contact us immediately at privacy@ppay.app.",
+      "PPAY is intended for users aged 18 and above. We do not knowingly collect personal data from anyone under 18. If you believe a minor has created an account, contact us immediately at ppay.ng1@gmail.com.",
+    ],
+  },
+  {
+    title: "Cookies and tracking technologies",
+    content: [
+      "We use cookies and similar technologies (web beacons, pixels, device identifiers) to enable secure login, remember preferences, analyze platform usage, and prevent fraud.",
+      "Strictly necessary cookies cannot be disabled as they are essential to core platform functions such as authentication, session management, and payment processing.",
+      "You may control non-essential cookies through your browser or device settings. Disabling certain cookies may limit some platform functionality.",
+      "For full details on the types of cookies we use and how to manage them, please read our Cookie Policy.",
     ],
   },
   {
@@ -123,10 +134,13 @@ export default function PrivacyPage() {
           <p className="text-[15px] leading-[1.75] text-white/40">
             For privacy questions or to exercise your rights, contact our Data
             Protection Officer at{" "}
-            <a href="mailto:privacy@ppay.app" className="text-blue-400 hover:text-blue-300 transition-colors">
-              privacy@ppay.app
+            <a href="mailto:ppay.ng1@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+              ppay.ng1@gmail.com
             </a>
-            {" "}or write to PROSPER DIGITAL SYSTEMS LTD, Lagos, Nigeria.
+            {" "}or write to PROSPER DIGITAL SYSTEMS LTD, Lagos, Nigeria. See also our{" "}
+            <a href="/cookies" className="text-blue-400 hover:text-blue-300 transition-colors">Cookie Policy</a>
+            {" "}and{" "}
+            <a href="/aml-kyc" className="text-blue-400 hover:text-blue-300 transition-colors">AML &amp; KYC Policy</a>.
           </p>
         </div>
       </div>
