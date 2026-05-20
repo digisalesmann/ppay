@@ -125,6 +125,7 @@ export default function Hero() {
               alt="PPAY dashboard"
               width={290}
               screenBg="#1a3f7a"
+              priority
             />
           </motion.div>
         </div>

@@ -52,7 +52,8 @@ export default function Navbar() {
               alt="PPAY"
               width={100}
               height={36}
-              className="h-9 w-auto object-contain rounded-2xl"
+              className="h-9 object-contain rounded-2xl"
+              style={{ width: "auto" }}
               priority
             />
           </a>

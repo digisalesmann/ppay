@@ -5,6 +5,7 @@ import "./globals.css";
 const geist = Geist({ variable: "--font-geist", subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ppayglobal.com"),
   icons: { icon: "/ppay.PNG", apple: "/ppay.PNG" },
   title: "PPAY | Simplicity in Payments",
   description:
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${geist.variable} scroll-smooth`}>
+    <html lang="en" className={`${geist.variable} scroll-smooth`} data-scroll-behavior="smooth">
       <body className="min-h-screen antialiased bg-[#02040f]">{children}</body>
     </html>
   );

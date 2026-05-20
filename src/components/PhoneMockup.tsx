@@ -10,6 +10,7 @@ interface PhoneMockupProps {
   screenBg?: string;
   /** width in px — height is computed from 9:19.5 ratio */
   width?: number;
+  priority?: boolean;
 }
 
 export default function PhoneMockup({
@@ -18,6 +19,7 @@ export default function PhoneMockup({
   className,
   screenBg = "#f4f7fb",
   width = 280,
+  priority = false,
 }: PhoneMockupProps) {
   const h = Math.round(width * 2.16);
 
@@ -55,6 +57,7 @@ export default function PhoneMockup({
             src={src}
             alt={alt}
             fill
+            priority={priority}
             className="object-cover object-top"
             sizes={`${width}px`}
           />

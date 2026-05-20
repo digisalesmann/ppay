@@ -70,7 +70,8 @@ export default function Footer() {
                 alt="PPAY"
                 width={80}
                 height={28}
-                className="h-7 w-auto object-contain rounded-2xl"
+                className="h-7 object-contain rounded-2xl"
+                style={{ width: "auto" }}
               />
             </Link>
             <p className="text-[14px] leading-[1.7] text-white/30 max-w-[220px] mb-6">

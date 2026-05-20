@@ -73,7 +73,8 @@ export default function Download() {
             alt="PPAY"
             width={100}
             height={40}
-            className="h-10 w-auto object-contain rounded-2xl"
+            className="h-10 object-contain rounded-2xl"
+            style={{ width: "auto" }}
           />
         </motion.div>
 

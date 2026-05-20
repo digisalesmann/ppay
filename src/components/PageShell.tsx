@@ -14,7 +14,8 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
               alt="PPAY"
               width={90}
               height={32}
-              className="h-8 w-auto object-contain rounded-2xl"
+              className="h-8 object-contain rounded-2xl"
+              style={{ width: "auto" }}
               priority
             />
           </Link>
