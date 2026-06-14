@@ -25,7 +25,7 @@ export default function Home() {
         <RatesSection />
         <VTU />
         <SendMoney />
-        <NearPay />
+        {/* <NearPay /> */}
         <Savings />
         <VirtualNumbers />
         <WhatsAppBot />

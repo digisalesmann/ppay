@@ -23,7 +23,11 @@
       "Bash(git -C /home/buildwithvictor/Projects/ppay-website add next.config.ts package.json package-lock.json src/app/globals.css src/app/layout.tsx src/app/page.tsx src/app/favicon.ico src/app/icon.png src/app/about/ src/app/contact/ src/app/privacy/ src/app/terms/ src/components/ src/lib/ public/ppay.PNG public/brands/ public/screenshots/)",
       "Bash(git -C /home/buildwithvictor/Projects/ppay-website status --short)",
       "Bash(git -C /home/buildwithvictor/Projects/ppay-website commit -m ' *)",
-      "Bash(git -C /home/buildwithvictor/Projects/ppay-website push -u origin main)"
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website push -u origin main)",
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website log --oneline -4)",
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website add src/app/privacy/page.tsx src/app/terms/page.tsx src/components/Footer.tsx src/app/aml-kyc/ src/app/cookies/ src/components/Navbar.tsx src/components/PhoneMockup.tsx src/components/GiftCards.tsx src/components/VirtualNumbers.tsx src/components/Savings.tsx src/components/VTU.tsx src/components/RatesSection.tsx src/components/Hero.tsx src/components/Download.tsx src/components/PageShell.tsx)",
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website push origin main)",
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website add src/app/layout.tsx src/components/PhoneMockup.tsx src/components/Hero.tsx src/components/Navbar.tsx src/components/Footer.tsx src/components/PageShell.tsx src/components/Download.tsx)"
     ]
   }
 }
