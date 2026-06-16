@@ -37,7 +37,7 @@ const sections = [
       "Peer-to-peer transfers between PPAY users are free. Fees may apply to bank transfers, card funding, and certain third-party services.",
       "All applicable fees are displayed before you confirm a transaction. We will never charge a fee that was not disclosed prior to confirmation.",
       "Exchange rates are fetched in real time. PPAY may add a small spread to market rates for currency conversion services.",
-      "All transactions are final once confirmed. Refunds are handled on a case-by-case basis. Contact support at ppay.ng1@gmail.com for assistance.",
+      "All transactions are final once confirmed. Refunds are handled on a case-by-case basis. Contact support at use@ppayglobal.com for assistance.",
     ],
   },
   {
@@ -55,7 +55,7 @@ const sections = [
     title: "Account security",
     content: [
       "You are responsible for maintaining the confidentiality of your login credentials and transaction PIN.",
-      "You must notify us immediately at ppay.ng1@gmail.com if you suspect unauthorised access to your account.",
+      "You must notify us immediately at use@ppayglobal.com if you suspect unauthorised access to your account.",
       "PPAY will never ask for your password or PIN via phone, email, or chat. Any such request is fraudulent.",
     ],
   },
@@ -135,8 +135,8 @@ export default function TermsPage() {
           <h2 className="text-[18px] font-bold text-white mb-3">Questions?</h2>
           <p className="text-[15px] leading-[1.75] text-white/40">
             If you have questions about these Terms, contact us at{" "}
-            <a href="mailto:ppay.ng1@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-              ppay.ng1@gmail.com
+            <a href="mailto:use@ppayglobal.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+              use@ppayglobal.com
             </a>
             {" "}or through the in-app support chat.
           </p>

@@ -18,37 +18,28 @@ const nav: Record<string, { label: string; href: string }[]> = {
     { label: "Contact", href: "/contact" },
   ],
   Legal: [
-    { label: "Privacy Policy",   href: "/privacy"  },
-    { label: "Terms of Service", href: "/terms"    },
-    { label: "Cookie Policy",    href: "/cookies"  },
-    { label: "AML & KYC Policy", href: "/aml-kyc" },
+    { label: "Privacy Policy",        href: "/privacy"  },
+    { label: "Terms of Service",      href: "/terms"    },
+    { label: "Cookie Policy",         href: "/cookies"  },
+    { label: "AML & KYC Policy",      href: "/aml-kyc" },
+    { label: "E-Sign Consent",        href: "/esign"   },
   ],
 };
 
 const socials = [
   {
     label: "X",
-    href: "#",
+    href: "https://x.com/PpayNg1",
     path: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.263 5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z",
   },
   {
     label: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/useppay.ng?igsh=aDkzZGRsOHoyMXI1",
     svg: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="2" width="20" height="20" rx="5" />
         <circle cx="12" cy="12" r="4" />
         <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none" />
-      </svg>
-    ),
-  },
-  {
-    label: "LinkedIn",
-    href: "#",
-    svg: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-        <circle cx="4" cy="4" r="2" />
       </svg>
     ),
   },

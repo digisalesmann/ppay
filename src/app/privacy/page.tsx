@@ -56,7 +56,7 @@ const sections = [
       "Deletion: request erasure of your data where we are not legally required to retain it.",
       "Objection: opt out of marketing communications at any time via app settings or the unsubscribe link in emails.",
       "Portability: receive your data in a machine-readable format.",
-      "To exercise any right, email ppay.ng1@gmail.com. We respond within 30 days.",
+      "To exercise any right, email use@ppayglobal.com. We respond within 30 days.",
     ],
   },
   {
@@ -70,7 +70,7 @@ const sections = [
   {
     title: "Children's privacy",
     content: [
-      "PPAY is intended for users aged 18 and above. We do not knowingly collect personal data from anyone under 18. If you believe a minor has created an account, contact us immediately at ppay.ng1@gmail.com.",
+      "PPAY is intended for users aged 18 and above. We do not knowingly collect personal data from anyone under 18. If you believe a minor has created an account, contact us immediately at use@ppayglobal.com.",
     ],
   },
   {
@@ -134,8 +134,8 @@ export default function PrivacyPage() {
           <p className="text-[15px] leading-[1.75] text-white/40">
             For privacy questions or to exercise your rights, contact our Data
             Protection Officer at{" "}
-            <a href="mailto:ppay.ng1@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-              ppay.ng1@gmail.com
+            <a href="mailto:use@ppayglobal.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+              use@ppayglobal.com
             </a>
             {" "}or write to PROSPER DIGITAL SYSTEMS LTD, Lagos, Nigeria. See also our{" "}
             <a href="/cookies" className="text-blue-400 hover:text-blue-300 transition-colors">Cookie Policy</a>

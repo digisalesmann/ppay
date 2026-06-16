@@ -27,7 +27,8 @@
       "Bash(git -C /home/buildwithvictor/Projects/ppay-website log --oneline -4)",
       "Bash(git -C /home/buildwithvictor/Projects/ppay-website add src/app/privacy/page.tsx src/app/terms/page.tsx src/components/Footer.tsx src/app/aml-kyc/ src/app/cookies/ src/components/Navbar.tsx src/components/PhoneMockup.tsx src/components/GiftCards.tsx src/components/VirtualNumbers.tsx src/components/Savings.tsx src/components/VTU.tsx src/components/RatesSection.tsx src/components/Hero.tsx src/components/Download.tsx src/components/PageShell.tsx)",
       "Bash(git -C /home/buildwithvictor/Projects/ppay-website push origin main)",
-      "Bash(git -C /home/buildwithvictor/Projects/ppay-website add src/app/layout.tsx src/components/PhoneMockup.tsx src/components/Hero.tsx src/components/Navbar.tsx src/components/Footer.tsx src/components/PageShell.tsx src/components/Download.tsx)"
+      "Bash(git -C /home/buildwithvictor/Projects/ppay-website add src/app/layout.tsx src/components/PhoneMockup.tsx src/components/Hero.tsx src/components/Navbar.tsx src/components/Footer.tsx src/components/PageShell.tsx src/components/Download.tsx)",
+      "Bash(xargs sed -i 's/ppay\\\\.ng1@gmail\\\\.com/use@ppayglobal.com/g')"
     ]
   }
 }

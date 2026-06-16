@@ -222,8 +222,8 @@ export default function AmlKycPage() {
           <p className="text-[15px] leading-[1.75] text-white/40">
             For questions, compliance concerns, or verification-related inquiries, contact the
             PPAY Compliance Team at{" "}
-            <a href="mailto:ppay.ng1@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-              ppay.ng1@gmail.com
+            <a href="mailto:use@ppayglobal.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+              use@ppayglobal.com
             </a>{" "}
             or visit{" "}
             <a href="https://ppayglobal.com" className="text-blue-400 hover:text-blue-300 transition-colors">

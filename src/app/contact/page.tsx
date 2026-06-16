@@ -9,8 +9,8 @@ const channels = [
     icon: EnvelopeSimple,
     title: "Email support",
     desc: "For account and billing queries.",
-    value: "support@ppay.app",
-    href: "mailto:support@ppay.app",
+    value: "use@ppayglobal.com",
+    href: "mailto:use@ppayglobal.com",
   },
   {
     icon: ChatCircle,
@@ -23,8 +23,8 @@ const channels = [
     icon: TwitterLogo,
     title: "Twitter / X",
     desc: "Public questions and updates.",
-    value: "@ppayapp",
-    href: "#",
+    value: "@PpayNg1",
+    href: "https://x.com/PpayNg1",
   },
 ];
 
